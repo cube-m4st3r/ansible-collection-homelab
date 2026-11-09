@@ -1,0 +1,39 @@
+# --- OS / editors -----------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*~
+
+# --- Secrets & local config: never commit these -----------------------------
+# (gitleaks is the safety net, this list is the first line of defence)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.agekey
+keys.txt
+.vault_pass*
+vault-password*
+*.secret
+*.secrets
+secrets.local.*
+
+# --- Tool caches -------------------------------------------------------------
+.cache/
+
+# --- Ansible -----------------------------------------------------------------
+*.retry
+.ansible/
+collections/ansible_collections/
+ansible-navigator.log
+*-artifact-*.json
+
+# --- Collection build / test output ------------------------------------------
+*.tar.gz
+tests/output/
