@@ -1,0 +1,8 @@
+---
+# ansible-lint config for the cube_m4st3r.homelab collection
+profile: production
+
+exclude_paths:
+  - .cache/
+  - .github/
+  - tests/output/

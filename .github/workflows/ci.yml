@@ -1,0 +1,14 @@
+---
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    uses: cube-m4st3r/.github/.github/workflows/pre-commit.yml@main
